@@ -40,6 +40,7 @@ app.post('/', function (req, res) {
                     jsforcedata = result;
                     var pagevariables ={canvasrecords: sfdcdata, jsforcerecords: jsforcedata};
                     res.render("canvassaccess.ejs", {pv: pagevariables});
+                    console.log('');
                    });
                   }
 else{res.sendFile(__dirname + "/public/index.html");} 
